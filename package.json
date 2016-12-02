@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "API for NodeDB",
+  "main": "src/app",
+  "scripts": {
+    "serve": "TMPDIR=/tmp babel-watch ./src/app.js | bunyan",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simon Emms <simon@simonemms.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "bunyan-syslog": "github:mcavage/node-bunyan-syslog",
+    "lodash": "^4.17.2",
+    "mongodb": "^2.2.12",
+    "restify": "^4.3.0",
+    "steeplejack": "^2.0.0",
+    "steeplejack-bunyan": "^1.1.0",
+    "steeplejack-mongodb": "^2.1.0",
+    "steeplejack-restify": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-watch": "^2.0.3"
+  }
+}

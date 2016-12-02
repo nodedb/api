@@ -1,0 +1,21 @@
+{
+  "logging": {
+    "level": "NDB_LOGGING_LEVEL",
+    "streams": {
+      "papertrail": {
+        "active": "NDB_LOGGING_PAPERTRAIL_ACTIVE",
+        "host": "NDB_LOGGING_PAPERTRAIL_HOST",
+        "level": "NDB_LOGGING_PAPERTRAIL_LEVEL",
+        "port": "NDB_LOGGING_PAPERTRAIL_PORT"
+      },
+      "stdout": {
+        "active": "NDB_LOGGING_STDOUT_ACTIVE",
+        "level": "NDB_LOGGING_STDOUT_LEVEL"
+      }
+    }
+  },
+  "server": {
+    "name": "NDB_SERVER_NAME",
+    "port": "NDB_SERVER_PORT"
+  }
+}

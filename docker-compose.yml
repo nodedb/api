@@ -1,0 +1,21 @@
+version: '2'
+services:
+
+  api:
+    build: .
+    ports:
+      - "5858:5858"
+      - "9999:9999"
+    volumes:
+      - .:/opt/nodedb
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    environment:
+    command: /bin/bash -c 'npm install && npm run db:import && npm run serve'
+
+  mongodb:
+    image: mongo:3.2
+    ports:
+      - "9998:27017"

@@ -1,0 +1,21 @@
+{
+  "logging": {
+    "level": "debug",
+    "streams": {
+      "papertrail": {
+        "active": false,
+        "host": null,
+        "level": null,
+        "port": null
+      },
+      "stdout": {
+        "active": true,
+        "level": null
+      }
+    }
+  },
+  "server": {
+    "name": "nodedb-api",
+    "port": 9999
+  }
+}
