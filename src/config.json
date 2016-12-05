@@ -1,4 +1,9 @@
 {
+  "datastores": {
+    "cookies": {
+      "secret": "q1w2e3r4"
+    }
+  },
   "logging": {
     "level": "debug",
     "streams": {
@@ -15,7 +20,9 @@
     }
   },
   "server": {
+    "displayErrorDetail": true,
     "name": "nodedb-api",
-    "port": 9999
+    "port": 9999,
+    "prettyOutput": true
   }
 }

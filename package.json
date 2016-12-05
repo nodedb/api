@@ -10,15 +10,21 @@
   "author": "Simon Emms <simon@simonemms.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "bunyan": "^1.8.5",
     "bunyan-syslog": "github:mcavage/node-bunyan-syslog",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.14.0",
     "lodash": "^4.17.2",
     "mongodb": "^2.2.12",
-    "restify": "^4.3.0",
+    "pug": "^2.0.0-beta6",
     "steeplejack": "^2.0.0",
     "steeplejack-bunyan": "^1.1.0",
+    "steeplejack-express": "^0.2.0",
     "steeplejack-mongodb": "^2.1.0",
-    "steeplejack-restify": "^1.0.0"
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",

@@ -1,0 +1,32 @@
+block vars
+  - pageTitle = 'Internal server error'
+
+block content
+
+  .jumbotron.jumbotron--blue-dark.jumbotron--no-padding-top.jumbotron--no-padding-bottom.jumbotron--no-margin-bottom
+
+    .container
+
+      .column__md--6
+        img(src="/assets/img/error/lamp-switched-off.png" alt="Switched off lamp")
+
+      .column__md--6
+        h1 Internal server error
+
+        p Sorry, we've had a problem and can't solve it. Please try again later.
+
+        p This has been logged.
+
+  if displayDetail
+
+    .jumbotron.jumbotron--white.jumbotron--no-margin-bottom
+
+      .container
+
+        h2 Error stacktrace
+
+        pre
+          if err.stack
+            | #{ err.stack }
+          else
+            | #{ err }
